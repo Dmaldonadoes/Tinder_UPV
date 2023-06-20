@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Perfil.PerfilFragment">
+
+
+    <ImageView
+        android:id="@+id/fotoperfil"
+        android:layout_width="0dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="22dp"
+        android:src="@drawable/cargando"
+        app:layout_constraintBottom_toTopOf="@+id/nombreperfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/seleccionarFotoGaleria"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttoncerrarsesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="71dp"
+        android:text="Cerrar sesión"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/botoneditarperfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="71dp"
+        android:text="Editar Perfil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edadperfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Edad"
+        app:layout_constraintStart_toStartOf="@+id/nombreperfil"
+        app:layout_constraintTop_toBottomOf="@+id/nombreperfil" />
+
+    <EditText
+        android:id="@+id/descripcionperfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Descripción"
+        app:layout_constraintStart_toStartOf="@+id/edadperfil"
+        app:layout_constraintTop_toBottomOf="@+id/edadperfil" />
+
+    <EditText
+        android:id="@+id/nombreperfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="304dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nombre"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+   <!-- <ImageButton
+        android:id="@+id/hacerFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:src="@android:drawable/ic_menu_camera"
+        app:layout_constraintStart_toStartOf="@+id/seleccionarFotoGaleria"
+        app:layout_constraintTop_toBottomOf="@+id/seleccionarFotoGaleria" />-->
+
+    <ImageButton
+        android:id="@+id/seleccionarFotoGaleria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="41dp"
+        android:src="@android:drawable/ic_menu_gallery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fotoperfil"
+        app:layout_constraintTop_toTopOf="@+id/fotoperfil" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
